@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Card Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #inner-container {
+            /* border: 2px solid black; */
+            width: 66%;
+            gap: 20px;
+            padding: 0.5vh;
+        }
+
+        #card {
+            border: 0.5px solid black;
+            display: flex;
+            justify-content: start;
+            gap: 1vw;
+            padding: 1.5vh 1.5vh;
+            width: 70%;
+            margin: 5vh auto;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #txtcont-1 {
+            /* border: 2px solid green; */
+            width: 87%;
+            margin-bottom: 1vh;
+            font-weight: bolder;
+            font-size: medium;
+        }
+
+        #txtcont-2 {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: left;
+            width: 50%;
+            font-size: small;
+            gap: 1%;
+        }
+
+        #thumbNail img {
+            border-radius: 7px;
+        }
+
+        .dot {
+            align-self: flex-start;
+            transform: translateY(-40%);
+            font-weight: bolder;
+        }
+
+        .inner-txt p {
+            font-weight: lighter;
+            font-size: smaller;
+        }
+
+        .timeStamp {
+            height: 2vh;
+            width: 2.5vw;
+            background-color: rgba(0, 0, 0, 0.753);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-small;
+            border-radius: 3px;
+            position: absolute;
+            left: 11vw;
+            bottom: 1.5vw;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="card">
+            <div id="thumbNail">
+                    <img src="assets/images/thumbnail.jpeg" width="200" alt="image">
+                    <div class="timeStamp">
+                        <p>31:20</p>
+                    </div>
+            </div>
+            <div id="inner-container">
+                <div id="txtcont-1">
+                    <h4>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1 </h4>
+                </div>
+                <div id="txtcont-2" class="inner-txt">
+                    <div id="channel-name" class="smallfonts">
+                        <p>CodeWithHarry</p>
+                    </div>
+                    <div class="dot" class="inner-txt">.</div>
+                    <div id="idviews" class="smallfonts">
+                        <p>1000 views</p>
+                    </div>
+                    <div class="dot" class="inner-txt">.</div>
+                    <div id="timeOld" class="smallfonts">
+                        <p>1 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
